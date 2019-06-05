@@ -318,7 +318,7 @@ main ul li {
   padding: 2em 0;
 }
 
-.schoolintro .bg {
+.schoolintro .floatingbg {
   display: block;
   position: absolute;
   left: 10%;
@@ -358,11 +358,6 @@ body > header > section > label {
   color: rgba(255, 126, 45, 1);
 }
 
-.signup > * {
-  max-width: 58em;
-  margin: 0 auto; 
-}
-
 #mc-embedded-subscribe-form label {
   font-weight: bold;
 }
@@ -387,7 +382,7 @@ body > header > section > label {
 }
 
 #mc-embedded-subscribe-form input[type=checkbox]{
-  display: inline; 
+  display: inline;
   width: auto;
   margin: 0 0.3em 0 1em;
 }
@@ -413,7 +408,7 @@ body > header > section > label {
 }
 
 @media all and (max-width: 58em) {
-  
+
   h2, h3, h4 {
     text-align: center;
   }
@@ -472,7 +467,7 @@ body > header > section > label {
     margin: 0 5%;
   }
 
-  .schoolintro .bg {
+  .schoolintro .floatingbg {
     left:0;
     right: 0;
     width: 100%;
@@ -526,7 +521,7 @@ body > header > section > label {
   .hero p {
     font-size: 3em;
   }
-  
+
   #mc-embedded-subscribe-form {
     padding: 1em;
   }
