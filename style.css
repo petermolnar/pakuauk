@@ -1,0 +1,554 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+html,
+body > footer {
+  background-color: #222;
+}
+
+body {
+  color: #222;
+  background-color: #fff;
+}
+
+a {
+  color: #ba0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 1em 0 0.3em 0;
+}
+
+h1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #ba0000;
+  font-size: 1.7em;
+  padding: 1em 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 1em 0 0.6em 0;
+}
+
+nav > ul {
+  list-style-type: none;
+  line-height: 3em;
+}
+
+nav > ul > li {
+ display: inline-block;
+ padding: 0.3em 0.4em;
+}
+
+body > header,
+body > footer {
+   padding: 1em;
+}
+body > footer {
+  color: #eee;
+}
+
+body > header > section,
+body > footer > section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+body > header > section > nav {
+  align-items: center;
+  padding: 1em 0;
+}
+
+body > header > section > svg {
+  height: 4em;
+  width: auto;
+}
+
+body > header a {
+  color: #000;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+body > header a:hover,
+body > header a.active {
+  color: #ba0000;
+}
+
+body > footer h3 {
+  margin: 0 0 0.3em 0;
+}
+
+body > footer ul {
+  margin: 0 0 1em 0;
+  list-style-type: none;
+}
+
+body > footer ul li {
+  margin: 0 0 0.6em 0;
+}
+
+body > footer a {
+  color: #ccc;
+}
+
+body > footer a:hover {
+  color: #ba0000;
+}
+
+body > footer > section > div > a > svg {
+  width: 20em;
+}
+
+body > footer nav ul img {
+  width: 3em;
+}
+
+body > footer nav {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.disciplines > div {
+  margin:2em auto;
+}
+
+.disciplines > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disciplines div:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.disciplines div img {
+  display: block;
+  max-height: 90vh;
+  max-width: 50%;
+  border: 0px solid none;
+}
+
+.disciplines div div {
+  text-align: center;
+  max-width: 48%;
+}
+
+.disciplines > div > div * {
+  padding: 0.6em;
+}
+
+.disciplines > div > div > p {
+  letter-spacing: 0.03em;
+  font-size: 1.6em;
+}
+
+table {
+  width: 100%;
+  margin: 2em 0;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 0.3em;
+  border: 1px solid #777;
+  text-align:left;
+}
+
+th {
+  font-weight: bold;
+}
+
+th, tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+details {
+  display: block;
+}
+
+details * {
+  text-align: left;
+}
+
+summary {
+  text-align: center;
+  border: 1px solid #ba0000;
+  color: #ba0000;
+  font-weight: bold;
+  padding: 1em 0;
+  width: 16em;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+article {
+  padding: 1em;
+  max-width: 58em;
+  margin: 0 auto;
+}
+
+main h3 {
+  text-transform:uppercase;
+  font-size: 1.3em;
+}
+
+main ul {
+  margin-left: 1.2em;
+}
+
+main ul li {
+  line-height: 1em;
+}
+
+.hero {
+  min-height: 30em;
+  max-height: 90vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content:end;
+  background-attachment:fixed;
+}
+
+.hero p {
+  font-size: 4em;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 0 #000;
+  align-self:flex-end;
+  margin: 1em;
+}
+
+.headline {
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-items: center;
+}
+
+.headline div {
+  background-color: rgba(255,255,255,0.9);
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 40em;
+}
+
+.frameholder {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51%;
+}
+
+.frameholder iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+
+.people {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.people img {
+  width: 8em;
+  margin-bottom: 1em;
+}
+
+.people li {
+  text-align: center;
+  min-width: 12em;
+  padding: 1em 0;
+  margin: 1em;
+}
+
+.people strong,
+.people .rank,
+.people .classes {
+  display: block;
+}
+
+.people .rank,
+.people .classes {
+  font-size: 0.9em;
+}
+
+.schoolintro {
+  background-color: #ddd;
+  position:relative;
+  padding: 2em 0;
+}
+
+.schoolintro .bg {
+  display: block;
+  position: absolute;
+  left: 10%;
+  width: 50%;
+  top: 1em;
+  bottom: 1em;
+  background-image:url('https://static.wixstatic.com/media/80d0c2_0ac5f36579244b7cb4b80beccee32ac9.png/v1/fill/w_480,h_680,al_c,usm_0.66_1.00_0.01/80d0c2_0ac5f36579244b7cb4b80beccee32ac9.png');
+  background-position: center;
+  z-index: 1;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.schoolintro .info {
+  position: relative;
+  display: block;
+  margin: 0 10% 0 50%;
+  background-color: #222;
+  color: #eee;
+  padding: 2em;
+  z-index: 2;
+}
+
+body > header > section > input,
+body > header > section > label {
+  display: none;
+}
+
+.signup {
+  background-color: #111;
+  padding: 2em 0;
+  color: #eee;
+}
+
+.signup h2 {
+  text-align: center;
+  color: rgba(255, 126, 45, 1);
+}
+
+.signup > * {
+  max-width: 58em;
+  margin: 0 auto; 
+}
+
+#mc-embedded-subscribe-form label {
+  font-weight: bold;
+}
+
+#mc-embedded-subscribe-form > p label {
+  display: none;
+}
+
+#mc-embedded-subscribe-form input[type=text],
+#mc-embedded-subscribe-form input[type=email] {
+  display: inline-block;
+  min-width: 20em;
+  background-color: #111;
+  border: none;
+  border-bottom: 2px solid rgba(255, 126, 45, 1);;
+  padding: 0.6em 0.3em;
+  color: #ccc;
+}
+
+#mc-embedded-subscribe-form input[type=email] {
+  color: rgba(255, 126, 45, 1);
+}
+
+#mc-embedded-subscribe-form input[type=checkbox]{
+  display: inline; 
+  width: auto;
+  margin: 0 0.3em 0 1em;
+}
+
+#mc-embedded-subscribe-form fieldset {
+  display: inline;
+  border: none;
+}
+
+#mc-embedded-subscribe-form input[type=submit] {
+  background-color: #000;
+  border: 2px solid rgba(255, 126, 45, 1);
+  color: rgba(255, 126, 45, 1);
+  padding: 0.6em;
+  margin: 1em 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#mc-embedded-subscribe-form input[type=submit]:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+@media all and (max-width: 58em) {
+  
+  h2, h3, h4 {
+    text-align: center;
+  }
+
+  body > header > section > input ~ label {
+    cursor: pointer;
+    font-size: 2em;
+    transition: 0.5s;
+    display: block;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    color: #ba0000;
+    border: 1px solid #ba0000;
+    z-index: 99;
+    background-color: #fff;
+    padding: 0.1em 0.4em;
+  }
+
+  body > header > section > input ~nav {
+    position: fixed;
+    display: block;
+    right: -100%;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    padding: 6em 4em 1em 1em;
+    z-index: 10;
+    box-shadow: 1px 0 5px #000;
+  }
+
+  body > header > section > input ~nav svg {
+    position: relative;
+    height: 4em;
+    display: block;
+    margin: 0 auto 1em auto;
+  }
+
+  body > header > section > input ~nav li {
+    display: block;
+    font-size: 1.6em;
+  }
+
+  body > header > section > input:checked ~ label {
+    transform: rotate(90deg);
+    position: fixed;
+  }
+
+  body > header > section > input:checked ~nav {
+    right: 0;
+  }
+
+
+  .schoolintro .info {
+    margin: 0 5%;
+  }
+
+  .schoolintro .bg {
+    left:0;
+    right: 0;
+    width: 100%;
+  }
+
+  body > footer > section {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .disciplines > div {
+    display: block;
+    margin-bottom: 6em;
+  }
+
+  body > footer > section > div {
+    margin: 3em 0;
+  }
+
+  body > footer > section {
+    display: block;
+    text-align: center;
+  }
+
+  .disciplines div img {
+    margin: 0 auto;
+  }
+
+  .disciplines div img {
+    max-width: 100%;
+  }
+
+  .disciplines div div {
+    max-width: 100%;
+  }
+
+  details p {
+    text-align: justify;
+  }
+
+  .headline div {
+    /*! margin: 0.6em; */
+    padding: 0.6em;
+    text-align: center;
+  }
+
+  .hero {
+    justify-content:center;
+  }
+
+  .hero p {
+    font-size: 3em;
+  }
+  
+  #mc-embedded-subscribe-form {
+    padding: 1em;
+  }
+
+  #mc-embedded-subscribe-form input[type=text],
+  #mc-embedded-subscribe-form input[type=email],
+  #mc-embedded-subscribe-form input[type=submit] {
+    display: block;
+    margin: 1em auto;
+  }
+}
+
+details[open] summary {
+  background-color: #ba0000;
+  color: #fff;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; }
+  100%  {opacity: 1; }
+}

@@ -1,0 +1,78 @@
+{
+    "@context": "http://schema.org",
+    "@type": "EducationalOrganization",
+    "logo": {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "https://pakuauk.com/favicon.png"
+    },
+    "url": "https://pakuauk.com/",
+    "name": "pakuauk.com",
+    "email": "info@pakuauk.com",
+    "contactPoint" : [
+        {
+            "@type" : "ContactPoint",
+            "telephone" : "+441223852904",
+            "contactType" : "customer service",
+            "areaServed" : "Cambridgeshire",
+            "email": "cambridge@pakuauk.com"
+        }
+    ],
+    "address": [
+        {
+            "@type": "PostalAddress",
+            "name": "Hills Road Sixth Form College",
+            "postalCode": "CB2 8PE",
+            "addressLocality": "Cambridge",
+            "addressRegion": "Cambridgeshire",
+            "streetAddress": "Hills Rd",
+            "addressCountry": "GB",
+            "url": "https://goo.gl/maps/r2SvugeKpDw",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "opens":  "19:00:00",
+                "closes":  "21:00:00",
+                "dayOfWeek": [
+                    "http://schema.org/Tuesday",
+                    "http://schema.org/Thursday"
+                ]
+            }
+        },
+        {
+            "@type": "PostalAddress",
+            "name": "Parkside Community College",
+            "postalCode": "CB1 1EH",
+            "addressLocality": "Cambridge",
+            "addressRegion": "Cambridgeshire",
+            "streetAddress": "Parkside",
+            "addressCountry": "GB",
+            "url": "https://goo.gl/maps/YgbmqtWvSD12",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "opens":  "17:00:00",
+                "closes":  "18:00:00",
+                "dayOfWeek": [
+                    "http://schema.org/Tuesday"
+                ]
+            }
+        },
+        {
+            "@type": "PostalAddress",
+            "name": "Saint Mark's Church Community Centre",
+            "postalCode": "MK41 7UY",
+            "addressLocality": "Bedford",
+            "addressRegion": "Bedfordshire",
+            "streetAddress": "7 Calder Rise",
+            "addressCountry": "GB",
+            "url": "https://goo.gl/maps/agiXVoB2v432",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "opens":  "18:30:00",
+                "closes":  "19:30:00",
+                "dayOfWeek": [
+                    "http://schema.org/Friday"
+                ]
+            }
+        }
+    ]
+}

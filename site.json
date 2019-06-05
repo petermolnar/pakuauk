@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "headline": "Pa-Kua School UK",
+    "url": "https://pakuauk.com",
+    "name": "pakuauk.com",
+    "image": "https://pakuauk.com/favicon.png",
+    "sameAs": [
+        "https://www.facebook.com/PaKuaUK",
+        "https://www.twitter.com/pakuauk",
+        "https://www.youtube.com/pakuauk",
+        "https://instagram.com/pakuauk",
+        "https://www.eventbrite.co.uk/o/pa-kua-international-school-19817765035"
+    ]
+}
