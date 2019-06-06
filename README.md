@@ -15,7 +15,7 @@ Org and site data are in JSON-LD files in `site.json` and `org.json`. Each page 
 
 ## Example `flickr.json`
 
-The required `flickr.json` file is not in the repository, because it contains and API key. It shoudl look like this:
+The required `.flickr.json` file is not in the repository, because it contains and API key. It should look like this:
 
 ```json
 {

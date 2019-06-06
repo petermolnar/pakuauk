@@ -28,7 +28,7 @@ function make_gallery() {
         return True;
     }
 
-    $flickr = json_decode(file_get_contents('flickr.json'), TRUE);
+    $flickr = json_decode(file_get_contents('.flickr.json'), TRUE);
     $flickr['method'] = "flickr.photosets.getPhotos";
     $flickr['extras'] = "media,url_m,url_l";
     $flickr['per_page'] = "500";
@@ -179,25 +179,24 @@ $site['mainEntity'] = &$meta;
 
 ?><html lang="<?php echo($meta['inLanguage']); ?>"><head>
     <!--[if lt IE 9]>
-    <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv-printshiv.min.js"></script>
+    <script src="html5shiv-printshiv.min.js"></script>
     <![endif]-->
-
     <title><?php echo($meta['headline']); ?></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
     <meta name="author" content="<?php echo($org['name']) ?>" />
-    <link rel="icon" href="<?php echo($site['url']); ?>favicon.png" />
-    <link rel="shortcut icon" type="image/png" href="<?php echo($site['url']); ?>favicon.png">
-    <link rel="canonical" href="<?php echo($meta['url']); ?>">
-    <meta name="google-site-verification" content="ERSaggz54vqmGW679dGszh79X7lO51I2jNQhY30-oEg">
-    <meta name="description" content="<?php echo($meta['description']); ?>">
-    <meta name="keywords" content="<?php echo($meta['keywords']); ?>">
-    <meta property="og:title" content="<?php echo($meta['headline']); ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php echo($meta['url']); ?>">
-    <meta property="og:description" content="<?php echo($meta['description']); ?>">
-    <meta property="og:site_name" content="<?php echo($site['name']); ?>">
-    <meta property="og:image" content="https://static.wixstatic.com/media/80d0c2_39d26f9a66974eadbe85d107a0bb971d~mv2.png">
+    <link rel="icon" href="<?php echo($site['image']); ?>" />
+    <link rel="shortcut icon" type="image/png" href="<?php echo($site['image']); ?>" />
+    <link rel="canonical" href="<?php echo($meta['url']); ?>" />
+    <meta name="google-site-verification" content="ERSaggz54vqmGW679dGszh79X7lO51I2jNQhY30-oEg" />
+    <meta name="description" content="<?php echo($meta['description']); ?>" />
+    <meta name="keywords" content="<?php echo($meta['keywords']); ?>" />
+    <meta property="og:title" content="<?php echo($meta['headline']); ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo($meta['url']); ?>" />
+    <meta property="og:description" content="<?php echo($meta['description']); ?>" />
+    <meta property="og:site_name" content="<?php echo($site['name']); ?>" />
+    <meta property="og:image" content="<?php echo($site['image']) ?>" />
     <meta property="article:published_time" content="<?php echo($meta['datePublished']); ?>">
     <meta property="article:modified_time" content="<?php echo($meta['dateModified']); ?>">
     <meta property="article:author" content="<?php echo($org['name']); ?>">
