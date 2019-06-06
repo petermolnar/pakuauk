@@ -18,6 +18,17 @@ body {
   background-color: #fff;
 }
 
+svg {
+  transform: rotate(0deg);
+  fill: currentColor;
+  vertical-align:middle;
+}
+
+body > svg {
+  display: none;
+  visibility: hidden;
+}
+
 a {
   color: #ba0000;
   text-decoration: none;
@@ -280,7 +291,7 @@ main ul li {
   left: 0; top: 0;
 }
 
-.people {
+.grid {
   list-style-type: none;
   margin: 0;
   padding:0;
@@ -289,26 +300,27 @@ main ul li {
   justify-content:center;
 }
 
-.people img {
-  width: 8em;
+.grid img,
+.grid svg {
+  height: 7em;
+  width: auto;
   margin-bottom: 1em;
 }
 
-.people li {
+.grid li {
   text-align: center;
   min-width: 12em;
   padding: 1em 0;
   margin: 1em;
 }
 
-.people strong,
-.people .rank,
-.people .classes {
+.grid strong,
+.grid span {
   display: block;
 }
 
-.people .rank,
-.people .classes {
+.grid .rank,
+.grid .classes {
   font-size: 0.9em;
 }
 
@@ -347,6 +359,39 @@ body > header > section > label {
   display: none;
 }
 
+/*
+.contact {
+  padding:3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:baseline;
+}
+
+.contact label {
+  margin-bottom: 2em;
+  padding: 0.3em 0;
+  display: inline-block;
+  width: 20%;
+  font-weight: bold;
+}
+
+.contact textarea,
+.contact input {
+  width: 75%;
+  display: inline-block;
+  padding: 0.3em;
+  color: #000;
+  background-color: #fff;
+  border:none;
+  border-bottom: 2px dashed #222;
+}
+
+.contact input[type=url] {
+  display: none;
+  visibility: hidden;
+}
+*/
+
 .signup {
   background-color: #111;
   padding: 2em 0;
@@ -355,21 +400,21 @@ body > header > section > label {
 
 .signup h2 {
   text-align: center;
-  color: rgba(255, 126, 45, 1);
 }
 
-#mc-embedded-subscribe-form label {
+.signup label {
   font-weight: bold;
+  display: unset;
 }
 
-#mc-embedded-subscribe-form > p label {
+.signup p label {
   display: none;
 }
 
-#mc-embedded-subscribe-form input[type=text],
-#mc-embedded-subscribe-form input[type=email] {
+.signup input[type=text],
+.signup input[type=email] {
   display: inline-block;
-  min-width: 20em;
+  width: 20em;
   background-color: #111;
   border: none;
   border-bottom: 2px solid rgba(255, 126, 45, 1);;
@@ -377,22 +422,22 @@ body > header > section > label {
   color: #ccc;
 }
 
-#mc-embedded-subscribe-form input[type=email] {
+.signup input[type=email] {
   color: rgba(255, 126, 45, 1);
 }
 
-#mc-embedded-subscribe-form input[type=checkbox]{
+.signup input[type=checkbox]{
   display: inline;
   width: auto;
   margin: 0 0.3em 0 1em;
 }
 
-#mc-embedded-subscribe-form fieldset {
+.signup fieldset {
   display: inline;
   border: none;
 }
 
-#mc-embedded-subscribe-form input[type=submit] {
+.signup input[type=submit] {
   background-color: #000;
   border: 2px solid rgba(255, 126, 45, 1);
   color: rgba(255, 126, 45, 1);
@@ -400,9 +445,10 @@ body > header > section > label {
   margin: 1em 0;
   cursor: pointer;
   transition: 0.5s;
+  width: auto;
 }
 
-#mc-embedded-subscribe-form input[type=submit]:hover {
+.signup input[type=submit]:hover {
   border-color: #fff;
   color: #fff;
 }
@@ -509,7 +555,6 @@ body > header > section > label {
   }
 
   .headline div {
-    /*! margin: 0.6em; */
     padding: 0.6em;
     text-align: center;
   }
@@ -524,13 +569,20 @@ body > header > section > label {
 
   #mc-embedded-subscribe-form {
     padding: 1em;
+    display: block;
   }
 
   #mc-embedded-subscribe-form input[type=text],
   #mc-embedded-subscribe-form input[type=email],
   #mc-embedded-subscribe-form input[type=submit] {
     display: block;
+    width: 80%;
     margin: 1em auto;
+  }
+
+  #mc-embedded-subscribe-form input[type=submit] {
+    width: auto;
+    padding: 1em;
   }
 }
 
