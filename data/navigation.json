@@ -1,0 +1,38 @@
+{
+    "index": {
+        "headline": "Pa-Kua School UK",
+        "description": "",
+        "keywords": [],
+        "name": "Home"
+    },
+    "the-school": {
+        "headline": "Pa-Kua International League",
+        "description": "Description of Pa-Kua International League, of it's origins, and it's system.",
+        "keywords": [],
+        "name": "What is Pa-Kua?"
+    },
+    "timetable": {
+        "headline": "Pa-Kua UK timetables, calendars, schedules",
+        "description": "",
+        "keywords": [],
+        "name": "Timetable & prices"
+    },
+    "book-a-trial": {
+        "url": "https://www.eventbrite.co.uk/o/pa-kua-international-school-19817765035",
+        "name": "Book a trial"
+    },
+    "about-us": {
+        "headline": "About Pa-Kua in the United Kingdom",
+        "description": "",
+        "keywords": [],
+        "name": "About us",
+        "@type": "AboutPage"
+    },
+    "contact": {
+        "headline": "Contact Pa-Kua School UK",
+        "description": "",
+        "keywords": [],
+        "name": "Contact",
+        "@type": "ContactPage"
+    }
+}

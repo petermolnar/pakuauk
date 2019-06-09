@@ -17,6 +17,12 @@
             "areaServed" : "Cambridgeshire",
             "email": "cambridge@pakuauk.com"
         }
+        {
+            "@type" : "ContactPoint",
+            "contactType" : "Customer Service",
+            "areaServed" : "UK",
+            "email": "info@pakuauk.com"
+        }
     ],
     "address": [
         {
@@ -53,6 +59,24 @@
                 "closes":  "18:00:00",
                 "dayOfWeek": [
                     "http://schema.org/Tuesday"
+                ]
+            }
+        },
+        {
+            "@type": "PostalAddress",
+            "name": "Cantabs RUFC",
+            "postalCode": "CB2 8PW",
+            "addressLocality": "Cambridge",
+            "addressRegion": "Cambridgeshire",
+            "streetAddress": "Sedley Taylor Road",
+            "addressCountry": "GB",
+            "url": "https://goo.gl/maps/LQmDwcyDFEbjxJF28",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "opens":  "18:00:00",
+                "closes":  "20:00:00",
+                "dayOfWeek": [
+                    "http://schema.org/Monday"
                 ]
             }
         },
