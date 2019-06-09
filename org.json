@@ -13,7 +13,7 @@
         {
             "@type" : "ContactPoint",
             "telephone" : "+441223852904",
-            "contactType" : "customer service",
+            "contactType" : "Customer Service",
             "areaServed" : "Cambridgeshire",
             "email": "cambridge@pakuauk.com"
         }

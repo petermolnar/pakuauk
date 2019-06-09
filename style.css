@@ -74,7 +74,17 @@ nav > ul {
 
 nav > ul > li {
  display: inline-block;
- padding: 0.3em 0.4em;
+ padding: 0.3em 0;
+}
+
+nav > ul > li:after {
+  content: '•';
+  margin: 0.4em;
+}
+
+nav > ul > li:last-of-type:after {
+  content: '';
+  margin: 0;
 }
 
 body > header,
@@ -107,6 +117,8 @@ body > header a {
   color: #000;
   font-weight: bold;
   font-size: 90%;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 body > header a:hover,
@@ -458,6 +470,11 @@ body > header > section > label {
   h2, h3, h4 {
     text-align: center;
   }
+   
+  nav > ul > li:after {
+    content: unset;
+    margin: 0;
+  }
 
   body > header > section > input ~ label {
     cursor: pointer;
@@ -567,20 +584,20 @@ body > header > section > label {
     font-size: 3em;
   }
 
-  #mc-embedded-subscribe-form {
+  .signup {
     padding: 1em;
     display: block;
   }
 
-  #mc-embedded-subscribe-form input[type=text],
-  #mc-embedded-subscribe-form input[type=email],
-  #mc-embedded-subscribe-form input[type=submit] {
+  .signup input[type=text],
+  .signup input[type=email],
+  .signup input[type=submit] {
     display: block;
     width: 80%;
     margin: 1em auto;
   }
 
-  #mc-embedded-subscribe-form input[type=submit] {
+  .signup input[type=submit] {
     width: auto;
     padding: 1em;
   }

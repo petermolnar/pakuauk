@@ -126,9 +126,8 @@ class Page {
         global $org;
         global $site;
 
-        $stat = stat($self->html);
-        $meta = json_decode(file_get_contents($self->json), TRUE);
-        print_r($meta);
+        $stat = stat($this->html);
+        $meta = json_decode(file_get_contents($this->json), TRUE);
         $meta['author'] = &$org;
         $meta['publisher'] = &$org;
         $meta['dateModified'] = date("c", $stat['mtime']);
@@ -136,6 +135,7 @@ class Page {
         $meta['copyrightYear'] = date("Y", $stat['mtime']);
         $meta['url'] = ('index' == $maybe) ? $site['url'] : sprintf("%s?%s", $site['url'], $maybe);
         $meta['@id'] = $meta['url'];
+        $meta['@type'] = 'Article';
         $meta['mainEntityOfPage'] = sprintf("%s#main", $meta['url']);
         if (!isset($meta['image']) or empty($meta['image'])) {
             $meta['image'] = $site['image'];
@@ -261,7 +261,7 @@ $site['mainEntity'] = &$meta;
                 <h3>Contact</h3>
                 <ul>
                     <li><a href="mailto:info@pakuauk.com">info@pakuauk.com</a></li>
-                    <li><a href="https://chat.whatsapp.com/CmDShQzb0n021LpO0hqEQ6">Pa-Kua on WhatsApp</a></li>
+                    <li><a href="https://wa.me/441223852904">Pa-Kua on WhatsApp</a></li>
                     <li><a href="http://webchat.freenode.net/?channels=%23PaKua">#PaKua @ freenode IRC</a></li>
                 </ul>
             </div>
@@ -294,7 +294,7 @@ $site['mainEntity'] = &$meta;
                             </a>
                         </li>
                         <li>
-                            <a href="https://chat.whatsapp.com/CmDShQzb0n021LpO0hqEQ6">
+                            <a href="https://wa.me/441223852904">
                                 <svg width="48" height="48"><use xlink:href="#icon-whatsapp" /></svg>
                             </a>
                         </li>
